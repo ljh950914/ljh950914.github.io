@@ -41,7 +41,7 @@ function prjOnclick(flag, text, vista) {
   }
   else if (flag == 1) {
     navh.style.height = '100%';
-    prjDisplay('./images/cctv.png', 'none', 'none');
+    prjDisplay('./images/cctv.PNG', 'none', 'none');
     event.stopPropagation();
     devTable(CCTVArr);
 
