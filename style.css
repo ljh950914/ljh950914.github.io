@@ -1,0 +1,341 @@
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+    /*폰트 설정*/
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /*vh인 이유: 실제로 100%를 표현하지 못함*/
+    /*그라디언트 주는 것, 검은색 불투명도*/
+    font-family: '나눔스퀘어';
+}
+
+.container .header{
+    width: 95%;
+    height: 120px;
+    margin: 0 0 0 0;
+    /*각각 써야하는ㄷ auto쓰면 한 번에 함*/
+    /*수평 기준 가운데 정렬*/
+    display: flex;
+    justify-content: space-between;
+    /*header 밑에 h1와 내부 클래스들이 왼, 오 정렬 됨*/
+    align-items:center;
+    position:fixed;
+    padding-left: 5%;
+    font-size: 25px;
+}
+
+.container .header_prj{
+    width: 95%;
+    height: 120px;
+    margin: 0 0 0 0;
+    /*각각 써야하는ㄷ auto쓰면 한 번에 함*/
+    /*수평 기준 가운데 정렬*/
+    display: flex;
+    justify-content: space-between;
+    /*header 밑에 h1와 내부 클래스들이 왼, 오 정렬 됨*/
+    align-items:center;
+    position:fixed;
+    background-color:white;
+    padding-left: 5%;
+    z-index:100; 
+    font-size: 25px;
+    /* text-align: center; */
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color:white;
+    font-family: abster;
+}
+
+.container .header_prj h1 a{
+    text-decoration: none;
+    color:black;
+    font-family: abster;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    /*가로정렬*/
+    margin:0 10px;
+}
+
+.container .nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.container .nav ul li a:hover{
+    color:#1fdfdf;
+}
+
+.container .nav ul li.fdf{
+    color:black;
+}
+
+
+.container .hero{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2{
+    font-size: 50px;    
+    margin-bottom: 20px;
+}
+
+.container .hero p {
+    font-size: 18px;
+}
+
+.line{
+    width: 100%;
+}
+.container .hero button {
+    background: none;
+    border: 2px solid darkseagreen;
+    color:white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    /*테두리가 20px만큼 둥글*/
+    margin-top: 30px;
+    /*위 텍스트와 간격*/
+    outline: none;
+    /*클릭했을 때 잔상 제거*/
+    cursor: pointer;
+    transition:all .4s;
+    /*바뀌는 걸 0.4s 동안 (애니메이션효과) */
+}
+
+.container .hero button:hover {
+    background-color: darkslategray;
+}
+
+.container .header .h1_prj a{
+    text-decoration: none;
+    color:black;
+    font-family: abster;
+}
+
+.nav_prj{
+    background-color:#f1f1f1; 
+    width: 16.5%;
+    text-align: left;
+    height: 100%;
+    /* margin-left: 0%;
+     */
+    margin-top: 6.5%;
+    font-size:20px;
+    text-align: left;
+    float:left;
+    position:fixed;
+    /* padding: 0 0 0 0; */
+}
+.container .nav_prj ul li a {
+    text-decoration: none;
+    color:black;
+}
+
+.container .nav_prj ul li {
+    display:list-item;
+    list-style-type: none;
+    /*세로정렬*/
+}
+
+.container .nav_prj ul li a {
+    color:black;
+}
+
+
+.container .nav_prj ul li a:hover{
+    color:#00409b;
+}
+
+.lineprj{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.nav_prj ul li ul {
+    font-size: 12px;
+}
+
+.toggle{
+    display: none;
+}
+
+.container .nav_prj .VistA .toggle li {
+    margin: 3px 10px 0 0; 
+    padding: 0 0 0 0;
+}
+
+.VistA{
+    margin-bottom: 0;
+}
+
+.nav_prj li:hover{
+    background-color:#e5e5e5;
+    transition:all .6s;
+}
+.nav_prj li {
+    padding: 14% 0 14% 28%;
+    cursor: pointer;
+}
+.projectmain {
+    position: relative;
+    margin-left: 7.2%;
+}
+.prjdft {
+    padding-top: 7.5%;
+    width: 90%;
+    height: 10%;
+    margin-left:10%;
+    display: none; 
+    /* position: absolute; */
+    /* background-color: #1fdfdf */
+}
+
+.EMRCnt{
+    width: 90%;
+    margin-left:10%;
+    display: none; 
+}
+
+.prjdft .prjHeader {
+    width: 100%;
+    height: 5%;
+    padding: 15px 0 0 3%;
+    margin-bottom: 13px;
+    text-align: left;
+    font-size:25px;
+    
+}
+
+.prjContents {
+    padding: 10px 0 0 45px;
+    text-align: left;
+    display: flex;
+}
+
+.EMRprjContents {
+    padding: 10px 0 0 45px;
+    text-align: left;
+    display: flex;
+}
+
+
+.cntImg {
+    width:450px;
+    /* margin-left:20px; */
+    position: relative;
+}
+
+.EMRcntImg {
+    width:450px;
+    /* margin-left:20px; */
+    position: relative;
+}
+
+
+.img {
+    position: relative;
+    width: 100%;
+}
+
+.EMRimg {
+    position: relative;
+    width: 100%; 
+}
+
+.cntTxt{
+    width: 300px;
+    height: 300px; 
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.EMRcntTxt{
+    /* background-color: burlywood; */
+    width: 300px;
+    height: 300px; 
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.lineCnt {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.prjContentV {
+    padding: 5px 0 5px 3%;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.EMRprjContentV {
+    padding: 5px 0 5px 3%;
+    text-align: left;
+    font-size: 20px;
+    /* margin-left:20px; */
+}
+
+.hisTag {
+    scroll-behavior: smooth;
+    /* overflow-y:scroll; */
+}
+
+.EMRTag {
+    scroll-behavior: smooth;
+    /* overflow-y:scroll; */
+}
+
+.HISTable, .table, td, th,tr {
+    border-collapse: collapse;  
+    border-top:1px soild #344444;
+    border-collapse: collapse;
+    /* border-color:#333; */
+    padding:3px;
+    width: 700px;
+}
+
+th {
+    width: 150px;
+    background-color:  #e5e5e5; 
+}
+
+td{
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #444444;
+    word-break:keep-all;
+}
+
+th, td{
+    border-top: 1px solid #444444;
+    padding: 10px;
+}
+
+.tableTitle {
+    /* width: 200px; */
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #444444;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JH's</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header_prj">
+            <h1 class='h1_prj'><a href="index.html">Portfolio</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="이력서_20210528.htm" class='fdf'>RESUME</a></li>
+                    <li><a href="project.html" class='fdf' >PROJECT</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <hr class='lineprj'>  -->
+        <div class="nav_prj" id="nav_prj">
+            <ul>
+                <li class='VistA' id='vistaPrj' onclick='prjOnclick("0","진료정보교류시스템","parent")'><a href="#">진료정보교류시스템</a>
+                    <ul class="toggle" style="font-size:15px">
+                        <li id='HIS' onclick='prjOnclick("0","진료정보교류시스템","EMR")' class='EMRTag'><a href="#EMRTag">- 교육용EMR </a></li>
+                        <li id='EMR' onclick='prjOnclick("0","진료정보교류시스템","HIS")' class='hisTag'> <a href="#hisTag">-
+                                병원정보시스템분석</a></li>
+                    </ul>
+                </li>
+                <li id='cctvPrj' onclick='prjOnclick("1","웹 기반 CCTV 모니터링 시스템")'><a href="#">웹 기반 CCTV <br>모니터링 시스템</a>
+                </li>
+                <li id='ddsPrj' onclick='prjOnclick("2","스마트 재난 감지 시스템")'><a href="#">스마트 <br>재난 감지 시스템</a></li>
+                <!-- <li><a href="#">웹 기반 CCTV 모니터링 시스템</a></li>
+                <li><a href="#">스마트 재난 감지 시스템</a></li> -->
+            </ul>
+        </div>
+        <div class='projectmain' id='projectmain'>
+            <div class="prjdft" id='prjdft'>
+                <div class="prjHeader" id='prjHeader'> text </div>
+                <div class="prjContentV" id='prjContentV'>test</div>
+                <div class="prjContents" id='prjContents'>
+                    <div class="cntImg">
+                        <img src="./images/eduEmr.png" class='img' id='img'>
+                        <!-- <p style='text-align: center'> asdasd</p> -->
+                    </div>
+                    <div class="cntTxt" id="cntTxt">
+                        <table class='table' id='table'>
+                            <tr>
+                                <th class='tableTitle'> 사용언어</th>
+                                <td>Delphi</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>IDE</th>
+                                <td>RAD Studio XE8</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>DB</th>
+                                <td>MUMPS, MySQL</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>주요기능</th>
+                                <td>수술, 약제, 혈액은행, 의무기록 통계 / 간호 근무 스케쥴 작성 / 제증명 발급 / 병리 처방 및 코드 관리</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>특징</th>
+                                <td>환자의 의료 데이터를 병원의 각 부서별로 정리, 통계 정보 조회 및 관리</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <!-- <hr class='lineCnt'> -->
+            </div>
+            <div class="EMRCnt" id='EMRCnt'>
+                <hr class='lineCnt'>
+                <div class="EMRprjContentV" id='hisTag'>병원정보시스템분석
+
+                </div>
+
+                <div class="EMRprjContents">
+                    <div class="EMRcntImg">
+                        <video poster='' controls class='EMRimg'>
+                            <source src='./images/HIS.mp4' type='video/mp4' />
+                        </video>
+                        <!-- <img src="/images/eduEmr.png" class='EMRimg' id='img'> -->
+                        <!-- <p style='text-align: center'> asdasd</p> -->
+                    </div>
+                    <div class="EMRcntTxt" id="cntTxt">
+                        <table class='HISTable'>
+                            <tr>
+                                <th class='tableTitle'> 사용언어</th>
+                                <td>Delphi</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>IDE</th>
+                                <td>RAD Studio XE8</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>DB</th>
+                                <td>MUMPS, MySQL</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>주요기능</th>
+                                <td>수술, 약제, 혈액은행, 의무기록 통계 / 간호 근무 스케쥴 작성 / 제증명 발급 / 병리 처방 및 코드 관리</td>
+                            </tr>
+                            <tr>
+                                <th class='tableTitle'>특징</th>
+                                <td>환자의 의료 데이터를 병원의 각 부서별로 정리, 통계 정보 조회 및 관리</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/jquery-3.1.1.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
